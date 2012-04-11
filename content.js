@@ -22,7 +22,7 @@ function procDocument(conv) {
 				var code = (m.charCodeAt(0) - 0x1400) + ((m.charCodeAt(1) - 0x1400) * 639);
 				return String.fromCharCode(code);
 			} else {
-			return m;
+				return m;
 			}
 		});
 	}

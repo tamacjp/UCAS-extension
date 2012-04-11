@@ -13,10 +13,8 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
 chrome.browserAction.onClicked.addListener(function(tab) {
 	// convertリクエスト
 	chrome.tabs.sendRequest(tab.id, { 'cmd':'convert' }, function(res) {
-		if (res.count) {
-			// 変換された
-			chrome.browserAction.setBadgeText({ 'tabId':tab.id, 'text':'' });
-		}
+		// 変換された
+		chrome.browserAction.setBadgeText({ 'tabId':tab.id, 'text':'' });
 	});
 });
 
