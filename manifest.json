@@ -19,7 +19,7 @@
     {
       "all_frames": true,
       "js": [ "content.js" ],
-      "matches": [ "http://*/*" ]
+      "matches": [ "http://*/*", "https://*/*" ]
     }
   ],
   "browser_action": {
