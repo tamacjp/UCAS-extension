@@ -22,7 +22,7 @@
       "matches": [ "http://*/*" ]
     }
   ],
-  "page_action": {
+  "browser_action": {
     "default_icon": "ucas.png",
     "default_title": "UCAS"
   }
