@@ -4,7 +4,6 @@ function procDocument(conv) {
 
 	// jQueryを使うまでもない。全ノード走査してテキストノードを書き換える。
 	function procNode(node) {
-		console.log(node.nodeType);
 		switch (node.nodeType) {
 		case 1/*Node.ELEMENT_NODE*/:
 			procElementNode(node);
