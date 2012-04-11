@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "UCAS decoder",
+  "version": "0.1",
+  "description": "Decode UCAS encryption",
+  "icons": {
+    "128": "ucas.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*" ]
+    }
+  ],
+  "page_action": {
+    "default_icon": "ucas.png",
+    "default_title": "UCAS"
+  }
+}
